@@ -10,10 +10,31 @@
         slug: 'introduction_to_HTML',
         topic_list: [
           {
-            heading: 'HTML INrTO',
+            heading: 'HTML Introduction',
             topic_desc:
               'HTML stands for HyperText Markup Language. It creates a complete website structure of web pages. HTML is a combination of Hypertext and Markup language. Hypertext defines the link between the web pages and markup language defines the text document within the tag. This HTML Tutorial provides basic to advanced concepts for beginners and professionals.'
-          }
+          },
+          {
+            heading: 'What is HTML?',
+            topic_desc:
+              'HTML stands for HyperText Markup Language. It creates a complete website structure of web pages. HTML is a combination of Hypertext and Markup language. Hypertext defines the link between the web pages and markup language defines the text document within the tag. This HTML Tutorial provides basic to advanced concepts for beginners and professionals.',
+            list:[
+              {
+                line:"It is platform-independent",
+              },
+              {
+                line:"Images, videos, and audio can be added to a web page.t",
+              },
+              {
+                line:"Hypertext can be added to the text.",
+              },
+            ]  
+          },
+          {
+            heading: 'HTML Atrributes',
+            topic_desc:
+              'HTML stands for HyperText Markup Language. It creates a complete website structure of web pages. HTML is a combination of Hypertext and Markup language. Hypertext defines the link between the web pages and markup language defines the text document within the tag. This HTML Tutorial provides basic to advanced concepts for beginners and professionals.'
+          },
         ]
       },
       {
@@ -27,7 +48,7 @@
               'HTML stands for HyperText Markup Language. It creates a complete website structure of web pages. HTML is a combination of Hypertext and Markup language. Hypertext defines the link between the web pages and markup language defines the text document within the tag. This HTML Tutorial provides basic to advanced concepts for beginners and professionals.',
             topic_list:[
                 {
-                    topic_list_heading:"Hrllo onw",
+                    heading:"Hrllo onw",
                 },
                 {
                     topic_list_heading:"Hrllo onw",

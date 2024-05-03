@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import data from '../utils/data.js'
 import Card from '../comp/Card.js';
 import { useNavigate } from 'react-router-dom';
@@ -6,7 +6,8 @@ function Home() {
 
 
     const Data = data;
-
+    const Navigate = useNavigate();
+    
   return (
     <div className='px-16'>{
                     console.log(Data)
@@ -23,8 +24,8 @@ function Home() {
             <ul className='flex flex-wrap'>
                 {
                     Data[0].course_chapters?.map((item,index)=>(
-                        <li key={index} >
-                            <Card topic={item.topic} day={item.day} />
+                        <li key={index}  onClick={()=>Navigate(`/course/${item.slug}`, {state:item.topic_list})} >
+                            <Card topic={item.topic} day={item.day} data={item.topic_list} />
                             </li>
                     ))
                 }
