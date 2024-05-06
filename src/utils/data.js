@@ -12,7 +12,12 @@
           {
             heading: 'HTML Introduction',
             topic_desc:
-              'HTML stands for HyperText Markup Language. It creates a complete website structure of web pages. HTML is a combination of Hypertext and Markup language. Hypertext defines the link between the web pages and markup language defines the text document within the tag. This HTML Tutorial provides basic to advanced concepts for beginners and professionals.'
+              'HTML stands for HyperText Markup Language. It creates a complete website structure of web pages. HTML is a combination of Hypertext and Markup language. Hypertext defines the link between the web pages and markup language defines the text document within the tag. This HTML Tutorial provides basic to advanced concepts for beginners and professionals.',
+              list:[
+                {
+                  line:"Hello wordl",
+                },
+              ]
           },
           {
             heading: 'What is HTML?',
@@ -35,10 +40,18 @@
             topic_desc:
               'HTML stands for HyperText Markup Language. It creates a complete website structure of web pages. HTML is a combination of Hypertext and Markup language. Hypertext defines the link between the web pages and markup language defines the text document within the tag. This HTML Tutorial provides basic to advanced concepts for beginners and professionals.'
           },
+        ],
+        practice_set:[
+          {
+            question:'What is HTML?'
+          },
+          {
+            question:'Create a basic HTML document structure including the <!DOCTYPE html> declaration, <html>, <head>, and <body> tags. Explain the purpose of each of these tags.?'
+          },
         ]
       },
       {
-        day: 1,
+        day: 2,
         topic: 'Introduction to HTML',
         slug: 'introduction_to_HTML',
         topic_list: [
@@ -55,6 +68,14 @@
                 },
             ]
           }
+        ],
+        practice_set:[
+          {
+            question:'What is HTML?'
+          },
+          {
+            question:'Create a basic HTML document structure including the <!DOCTYPE html> declaration, <html>, <head>, and <body> tags. Explain the purpose of each of these tags.?'
+          },
         ]
       },
       {
