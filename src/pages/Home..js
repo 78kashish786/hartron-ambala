@@ -7,6 +7,12 @@ function Home() {
 
     const Data = data;
     const Navigate = useNavigate();
+    const handleNext = ()=>{
+
+    }
+    const handlePrev = ()=>{
+
+    }
     
   return (
     <div className='px-16'>{
@@ -24,14 +30,14 @@ function Home() {
             <ul className='flex flex-wrap'>
                 {
                     Data[0].course_chapters?.map((item,index)=>(
-                        <li key={index}  onClick={()=>Navigate(`/course/${item.slug}`, {state:item.topic_list})} >
-                            <Card head={item.course} topic={item.topic} day={item.day} data={item.topic_list} practice_set={item.practice_set} />
-                            </li>
+                        <li key={index}  onClick={()=>Navigate(`/course/${item.day}`, {state:item}, {handleNext:handleNext}, {handlePrev:handlePrev})} >
+                            <Card head={item.course} topic={item.topic} day={item.day} data={item.topic_list} practice_set={item.practice_set}  />
+                            </li> 
                     ))
                 }
             </ul>
         </div>
-    </div>
+    </div>  
   )
 }
 

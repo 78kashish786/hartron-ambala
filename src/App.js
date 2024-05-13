@@ -15,7 +15,7 @@ function App() {
       <Main>
       <Routes>
       <Route element={<Home/>} path='/'></Route>
-      <Route element={<DetailComp/>}path='/course/:slug'/>
+      <Route element={<DetailComp/>}path='/course/:day'/>
       <Route element={<PageNotfound/>} path="/*"/>
       </Routes>
       </Main>
