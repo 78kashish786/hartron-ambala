@@ -7,12 +7,12 @@ function Home() {
 
     const Data = data;
     const Navigate = useNavigate();
-    const handleNext = ()=>{
-
-    }
-    const handlePrev = ()=>{
-
-    }
+    // const fetchData = ()=>{
+    //     return axios.
+    // }
+    // useEffect(()=>{
+        
+    // },[])
     
   return (
     <div className='px-16'>{
@@ -30,7 +30,7 @@ function Home() {
             <ul className='flex flex-wrap'>
                 {
                     Data[0].course_chapters?.map((item,index)=>(
-                        <li key={index}  onClick={()=>Navigate(`/course/${item.day}`, {state:item}, {handleNext:handleNext}, {handlePrev:handlePrev})} >
+                        <li key={index}  onClick={()=>Navigate(`/course/${item.day}`, {state:item}, {nextState:data} )} >
                             <Card head={item.course} topic={item.topic} day={item.day} data={item.topic_list} practice_set={item.practice_set}  />
                             </li> 
                     ))

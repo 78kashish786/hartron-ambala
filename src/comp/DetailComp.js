@@ -2,24 +2,26 @@ import React, { useState } from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import InformationComp from './InformationComp'
 import { GoDotFill } from 'react-icons/go'
-function DetailComp ({ head, practice_set, }) {
+function DetailComp ({ head, practice_set, nextState }) {
   const location = useLocation()
   const { state } = location;
-  // const params = useParams();
-  // const Navigate = useNavigate();
+  const params = useParams();
+  const Navigate = useNavigate();
   // console.log("params:",params);
-  // const num = parseFloat(params.day);
+  const num = parseFloat(params.day);
+  const alldata = nextState;
   // const handleNext = ()=>{
-  //   Navigate(`/course/${num+1}`);
+  //   Navigate(`/course/${nextState[`${num}`].day}`);
   // }
   console.log('State', state)
+
   return (
     <>
-    <div className='flex  justify-end'>
-        <button className='p-2 border bg-black text-white  m-1' >Next</button>
-        <button className='p-2 border bg-black text-white  m-1'>Prev</button>
+    <div className='flex  justify-end px-10'>
+        <button className='p-2 border bg-black text-white  m-1  px-5 my-3 rounded-md' >Next</button>
+        <button className='p-2 border bg-black text-white  m-1 px-5 my-3 rounded-md'>Prev</button>
     </div>
-    <div className='grid grid-cols-3 px-16 '>
+    <div className='md:grid grid-cols-3 md:px-16  '>
       <div className='px-5 py-10  '>
         <div className='w-full bg-gray-100 rounded-sm border p-5'>
           <h2>{head}</h2>
